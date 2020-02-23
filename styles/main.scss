@@ -1,0 +1,20 @@
+@import './vendor/normalize';
+
+// Medium screens and up
+@media (min-width: 768px) {
+
+}
+
+// Big screens
+@media (min-width: 1024px) {
+
+}
+
+.nav a {
+    display: flex;
+    justify-content: space-around;
+}
+
+h2 {
+    text-transform: lowercase;
+}
