@@ -341,4 +341,84 @@ template {
   display: none;
 }
 
+.home {
+  background-image: url("/assets/images/landing-bg.jpg");
+  background-size: cover;
+  max-width: 100%;
+  height: 500px;
+}
+
+.logo-container {
+  padding: 20px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 100px;
+  text-transform: uppercase;
+  color: white;
+}
+
+h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  line-height: 2;
+}
+
+.contact {
+  padding: 60px;
+}
+
+.yuzu {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .logo-container {
+    padding: 30px;
+    width: 50%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo-container, img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 /*# sourceMappingURL=main.css.map */
