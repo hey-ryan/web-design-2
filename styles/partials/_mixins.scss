@@ -1,0 +1,5 @@
+@mixin header-style($family, $color, $size) {
+    font-family: $family;
+    color: $color;
+    font-size: $size;
+}

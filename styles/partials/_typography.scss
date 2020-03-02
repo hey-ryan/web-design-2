@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Raleway|Roboto&display=swap');
+
+$primary-font: "Lora", serif;
+$secondary-font: "Roboto", sans-serif;
+
+h2 {
+    @include header-style($primary-font, white, 28px);
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+p {
+    @include header-style($secondary-font, white, 18px);
+}
