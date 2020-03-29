@@ -347,7 +347,6 @@ h2 {
   color: white;
   font-size: 28px;
   text-transform: uppercase;
-  padding-bottom: 30px;
 }
 
 p {
@@ -356,11 +355,23 @@ p {
   font-size: 18px;
 }
 
+.about h2 {
+  font-family: "Lora", serif;
+  color: black;
+  font-size: 28px;
+}
+
+.about p {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 18px;
+}
+
 .home {
   background-image: url("/assets/images/landing-bg.jpg");
   background-size: cover;
   max-width: 100%;
-  height: 50vh;
+  height: 100vh;
 }
 
 .home .logo-container {
@@ -368,62 +379,119 @@ p {
 }
 
 .home nav {
+  height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-top: 70px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 70px;
   text-transform: uppercase;
   color: white;
   font-size: 18px;
   font-family: "Lora", serif;
 }
 
-.contact {
-  height: 40vh;
-  padding: 61px;
+.contact-wrapper {
+  height: 97vh;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 10px solid tomato;
 }
 
-.contact h2 {
+.contact-wrapper h2 {
   margin: 0;
   color: black;
 }
 
-.contact p {
+.contact-wrapper h3 {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.contact-wrapper h4 {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
+.contact-wrapper p {
   color: black;
-  line-height: 1.5;
+  font-weight: bold;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .yuzu {
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .menu {
-  height: 100vh;
+  height: 98vh;
+  border: 8px solid tomato;
 }
 
 .menu img {
-  padding-top: 80px;
+  margin-top: 80px;
 }
 
 .about {
-  padding: 25px;
   background-image: url("/assets/images/about-img.jpg");
   background-size: cover;
   max-width: 100%;
-  height: 100vh;
+  height: 90vh;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .about h2 {
-  padding-top: 90px;
+  margin-top: 60px;
 }
 
-.about .story {
-  padding-top: 70px;
+.about p {
+  margin: 40px 20px;
+}
+
+.footer {
+  height: 10vh;
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer a {
+  margin: 10px;
 }
 
 @media (min-width: 1024px) {
