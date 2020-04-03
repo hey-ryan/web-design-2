@@ -10,16 +10,19 @@
     background-image: url("/assets/images/landing-bg.jpg");
     background-size: cover;
     max-width: 100%;
-    height: 50vh;
+    height: 100vh;
 
     .logo-container {
         padding: 20px;
     }
 
     nav {
+        height: 40vh;
         display: flex;
-        justify-content: space-around;
-        padding-top: 70px;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-evenly;
+        margin-top: 70px;
         text-transform: uppercase;
         color: $primary-color;
         font-size: 18px;
@@ -27,51 +30,77 @@
     }
 }
 
-.contact {
-    height: 40vh;
-    padding: 61px;
+.contact-wrapper {
+    height: 97vh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 10px solid tomato;
 
     h2 {
         margin: 0;
         color: $secondary-color;
     }
 
+    h3 {
+        order: 3;
+    }
+
+    h4 {
+        order: 4;
+    }
+
     p {
         color: $secondary-color;
-        line-height: 1.5;
+        font-weight: bold;
+        order: 2;
     }
 }
 
 .yuzu {
-    width: 100%;
     height: auto;
+    width: 100%;
 }
 
 .menu {
-    height: 100vh;
+    height: 98vh;
+    border: 8px solid tomato;
     
     img {
-        padding-top: 80px;
+        margin-top: 80px;
     }
 }
 
 .about {
-    padding: 25px;
     background-image: url("/assets/images/about-img.jpg");
     background-size: cover;
     max-width: 100%;
-    height: 100vh;
+    height: 90vh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 
     h2 {
-        padding-top: 90px;
+        margin-top: 60px;
     }
 
-    .story {
-        padding-top: 70px;
+    p {
+        margin: 40px 20px;
     }
+}
 
+.footer {
+    height: 10vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        margin: 10px;
+    }
 }
 
 @media (min-width: 1024px) {

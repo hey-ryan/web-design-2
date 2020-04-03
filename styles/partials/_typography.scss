@@ -6,9 +6,19 @@ $secondary-font: "Roboto", sans-serif;
 h2 {
     @include header-style($primary-font, white, 28px);
     text-transform: uppercase;
-    padding-bottom: 30px;
 }
 
 p {
     @include header-style($secondary-font, white, 18px);
 }
+
+.about {
+    h2 {
+        @include header-style($primary-font, black, 28px);
+    }
+
+    p {
+        @include header-style($secondary-font, black, 18px);
+    }
+}
+
