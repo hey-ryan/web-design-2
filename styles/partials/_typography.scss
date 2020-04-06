@@ -4,21 +4,23 @@ $primary-font: "Lora", serif;
 $secondary-font: "Roboto", sans-serif;
 
 h2 {
-    @include header-style($primary-font, white, 28px);
+    @include header-style($primary-font, black, 48px);
     text-transform: uppercase;
 }
 
+h3 {
+    @include header-style($primary-font, black, 24px);
+    text-transform: uppercase;
+}
+
+h4 {
+    @include header-style($secondary-font, black, 18px);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 p {
-    @include header-style($secondary-font, white, 18px);
+    @include header-style($secondary-font, black, 18px);
 }
 
-.about {
-    h2 {
-        @include header-style($primary-font, black, 28px);
-    }
-
-    p {
-        @include header-style($secondary-font, black, 18px);
-    }
-}
 
