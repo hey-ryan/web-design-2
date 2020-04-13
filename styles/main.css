@@ -370,6 +370,34 @@ p {
   font-size: 18px;
 }
 
+@media (min-width: 1024px) {
+  .logo-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 25% 5% 25%;
+  }
+  .about {
+    padding: 0 25% 5% 25%;
+  }
+}
+
 .home {
   background-image: url("/assets/images/landing-bg.jpg");
   background-size: cover;
@@ -497,30 +525,46 @@ nav .button:hover {
 .food-gallery {
   display: -ms-grid;
   display: grid;
-  width: 100vw;
-  height: auto;
+  -ms-grid-rows: (5vw)[8];
+      grid-template-rows: repeat(8, 5vw);
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  grid-gap: 15px;
+  margin: 0 5%;
 }
 
-.food-gallery .yuzu {
-  max-width: 100%;
-  height: auto;
+.food-gallery .gallery-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.food-gallery .gallery-item-1 {
   -ms-grid-column: 1;
       grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 5;
   -ms-grid-row: 1;
       grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 5;
 }
 
-.food-gallery .bkVerm {
-  max-width: 100%;
-  height: auto;
+.food-gallery .gallery-item-2 {
   -ms-grid-column: 1;
       grid-column-start: 1;
-  grid-column-end: 2;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
-  grid-row-end: 3;
+  grid-column-end: 5;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 9;
+}
+
+.food-gallery .gallery-item-3 {
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 9;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 9;
 }
 
 .findUs {
@@ -543,7 +587,6 @@ nav .button:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
-  padding: 10%;
   line-height: 1.5;
 }
 
@@ -584,44 +627,5 @@ nav .button:hover {
 .about img {
   width: 100%;
   height: auto;
-}
-
-@media (min-width: 1024px) {
-  .logo-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .menu {
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .menu img {
-    margin-top: 0;
-    height: 800px;
-    width: auto;
-  }
-  .about {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center right;
-    height: 90vh;
-    max-width: 100%;
-  }
-  .about .story {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    text-align: left;
-    width: 50%;
-  }
 }
 /*# sourceMappingURL=main.css.map */
