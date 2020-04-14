@@ -88,10 +88,26 @@
 
 
 .contact-wrapper {
-    height: 100vh;
+    height: 60vh;
     max-width: 100%;
     text-align: center;
     font-weight: 700;
+
+    .fa {
+        text-decoration: none;
+        padding: 15x;
+        font-size: 30px;
+        width: 50px;
+        margin: 5px 2px;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-instagram, .fa-facebook {
+        color: black;
+    }
 }
 
 .food-gallery {
@@ -127,17 +143,14 @@
         grid-row-start: 1;
         grid-row-end: 9;
     }
-    
-   // .gallery-item-4 {
-     //   grid-column-start: 7;
-       // grid-column-end: 13;
-       // grid-row-start: 6;
-     //   grid-row-end: 14;
-    //}
 }
 
 .findUs {
     text-align: center;
+
+    .map {
+        margin: 5%;
+    }
 
     .bar {
         max-width: 100%;
@@ -151,8 +164,12 @@
    flex-wrap: wrap;
    text-align: center;
    //padding: 10%;
-   //padding: 0 10%;
+   padding: 5% 10%;
    line-height: 1.5;
+
+   h2 {
+      margin: 30px; 
+   }
    
    h4 {
        margin: 0;
@@ -166,7 +183,7 @@
        border: 1px solid $secondary-color;
        height: 1px;
        background: $secondary-color;
-       margin: 45px 0;
+       margin: 35px 0 20px 0;
    }
 }
 
