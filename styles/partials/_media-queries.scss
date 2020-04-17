@@ -3,6 +3,10 @@
     .logo-container {
         display: flex;
         justify-content: center;
+
+        img {
+            width: 50%;
+        }
     }
 
     .menu {
