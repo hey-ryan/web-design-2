@@ -11,53 +11,86 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <section class="nav">
-        <nav>
-            <a class="button">Contact</a>
-            <a class="button">Menu</a>
-            <a class="button">About</a>
+    <nav id="example-1"></nav>
+        <nav class="nav nav-pills nav-fill bg-dark sticky-top">
+                <a class="nav-item nav-link text-light" href="#contact">Contact</a>
+                <a class="nav-item nav-link text-light" href="#menu">Menu</a>
+                <a class="nav-item nav-link text-light" href="#about">About</a>
+                <a class="nav-item nav-link text-light" href="http://www.squareup.com/store/singhsvietnamese">Order</a>
         </nav>
-        <div class="orderNow">
-           <a href="http://www.squareup.com/store/singhsvietnamese">
-              <span>Order Now on Square</span>
-           </a> 
-        </div>
-    </section>
+    </nav>
 
     <section class="home">
-        <div class="logo-container">
-        <img class="logo animated fadeInDown delay-2"  src="assets/images/singhs-logo.svg">
+        <div class="container-sm">
+        <img class="logo animated fadeInDown delay-2 img-fluid"  src="assets/images/singhs-logo.svg">
         </div>
     </section>
 
-    <section class="menu">
-        <h2>Menu</h2>
-        <h3>1. Choose your entree</h3>
-            <h4>Bun 10</h4>
-            <p>rice noodles, cucumbers, pickled carrots,
-                    cilantro, romaine lettuce, toasted peanuts,
-                    mint, sweet & sour nuoc mam, and a fried
-                    egg roll
-            </p>
-            <h4>Goi 9</h4>
-            <p>shaved carrots, reg and green cabbage
-                mixed with herbs, pickled onions, nuoc mam,
-                and topped with toasted peanuts
-            </p>
-            <h4>Rice 9</h4>
-            <p>rice seasoned with coconut oil, ginger, turmeric,
-                and scallions, includes sides of cucumber &
-                pickled carrots, and topped with sesame and cilantro
-            </p>
-            <h4>Bahn Mi 9</h4>
-            <p>cucumber, jalapenos, pickled carrots, cilantro, and aioli
-                on a toasted bolillo roll
-            </p>
-            <h4>Make Anything Spicy 1</h4>
-            <p>fresh chopped chilies and house made chili
-                oil
-            </p>
-        <h3>2. Choose Your Protien</h3>
+    <section data-spy="scroll" data-target="#example-1" data-offset="0"  class="about">
+        <h2 id="about">ABOUT US</h2>
+        <p class="font-weight-light mx-md-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, voluptas! Totam corrupti ratione autem 
+            facilis obcaecati voluptatem, illum ducimus quia ab quaerat a amet est quae velit ad inventore eligendi.</p>
+    </section>
+
+    <section class="text-center">
+        <img class="img img-thumbnail" src="assets/images/family.jpg">
+    </section>
+
+    <section data-spy="scroll" data-target="#example-1" data-offset="0"  class="menu">
+        <h1 id="menu">Menu</h1>
+        <h3 class="font-weight-light mb-4">Choose your entree</h3>
+            <div class="container-md">    
+                <div class="row justify-content-around">
+                    <div class="col-sm-12 col-md-4 mb-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/bkverm.jpg" class="card-img-top" alt="veggie bun">
+                            <div class="card-body">
+                                <h5 class="card-title">Bun</h5>
+                                <p class="card-text">Rice noodles, cucumbers, pickled carrots,
+                                cilantro, romaine lettuce, toasted peanuts,
+                                mint, sweet & sour nuoc mam, and a fried
+                                egg roll.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 mb-5">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/cat-goi.jpg" class="card-img-top" alt="catfish goi">
+                            <div class="card-body">
+                                <h5 class="card-title">Goi</h5>
+                                <p class="card-text">Shaved carrots, reg and green cabbage
+                                    mixed with herbs, pickled onions, nuoc mam,
+                                    and topped with toasted peanuts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-around">
+                    <div class="col-sm-12 col-md-4 mb-5">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/pp-banh.jpg" class="card-img-top" alt="pulled pork banh mi">
+                            <div class="card-body">
+                                <h5 class="card-title">Banh mi</h5>
+                                <p class="card-text">Cucumber, jalapenos, pickled carrots, cilantro, and aioli
+                                    on a toasted bolillo roll.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 mb-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/bk-rice.jpg" class="card-img-top" alt="brisket rice">
+                            <div class="card-body">
+                                <h5 class="card-title">Rice</h5>
+                                <p class="card-text">Rice seasoned with coconut oil, ginger,
+                                    turmeric and scallions. Includes sides of cucumbers and pickled
+                                    carrots. Topped with sesame and cilantro.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <h3 class="font-weight-light">Choose Your Protien</h3>
             <h4>Pork</h4>
             <p>traditional lemongrass pork shoulder</p>
             <h4>Chicken</h4>
@@ -70,15 +103,19 @@
             <p>battered with sriracha buttermilk</p>
             <h4>Pulled Pork</h4>
             <p>souther style, pulled, seared, and glazed</p>
-        <hr>
+
+        <div class="mx-auto" style="width: 200px;">
+            <hr>
+        </div>
+
         <h3>Snacks</h3>
-            <h4>Eggroll 2.50</h4>
+            <h4>Eggroll</h4>
             <p>mama's homemade recipe</p>
-            <h4>Chili Oil Ribs 7</h4>
+            <h4>Chili Oil Ribs</h4>
             <p> four crispy baby back ribs tossed in house chili
                 oil
             </p>
-            <h4>Winghs 7</h4>
+            <h4>Winghs</h4>
             <p>thai chili butter, lime, sesame, cilantro,
                 fresh chilies
             </p>
@@ -89,7 +126,7 @@
             <img class="gallery-img" src="assets/images/IMG_0650.jpg">
         </div>
         <div class="gallery-item gallery-item-2">
-            <img class="gallery-img" src="assets/images/bkverm.jpg">
+            <img class="gallery-img" src="assets/images/veg-bun.jpg">
         </div>
         <div class="gallery-item gallery-item-3">
             <img class="gallery-img" src="assets/images/luckycat.jpg">
@@ -101,16 +138,10 @@
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13896.900602643083!2d-98.4861512!3d29.4514351!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x642e5206217f328a!2sSingh&#39;s%20Vietnamese!5e0!3m2!1sen!2sus!4v1586821426169!5m2!1sen!2sus" width="100%" height="420" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
-        <img class="bar" src="assets/images/bar.jpg">
+        <img class="bar img-fluid img-thumbnail rounded" src="assets/images/bar.jpg">
     </section>
 
-    <section class="about">
-        <h2>ABOUT US</h2>
-        <p class="story">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, voluptas! Totam corrupti ratione autem 
-            facilis obcaecati voluptatem, illum ducimus quia ab quaerat a amet est quae velit ad inventore eligendi.</p>
-    </section>
-
-    <section class="contact-wrapper">
+    <section data-spy="scroll" data-target="#example-1" data-offset="0"  class="contact-wrapper" id="contact">
         <h2>Contact</h2>
         <p>singhsvietnamese@gmail.com</p>
         <p>MON: CLOSED</p>
@@ -118,6 +149,11 @@
         <p>FRI - SAT:11 AM - 11 PM</p>
         <a href="https://www.instagram.com/singhs_sa/" class="fa fa-instagram"></a>
         <a href="https://www.facebook.com/SinghsVietnameseTrailer/" class="fa fa-facebook"></a>
-    </section> 
+    </section>
+    
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
 </html>

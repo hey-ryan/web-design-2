@@ -1,114 +1,44 @@
-@import './vendor/normalize';
-@import './partials/mixins';
-@import './partials/typography';
-@import './partials/colors';
-@import './partials/media-queries';
+//@import './vendor/normalize';
+//@import './partials/mixins';
+//@import './partials/typography';
+//@import './partials/colors';
+//@import './partials/media-queries';
+
+@import "../scss/functions";
+@import "../scss/variables";
+@import "../scss/mixins";
+
 
 .home {
-    background-image: url("assets/images/landing-bg.jpg");
-    background-size: cover;
-    max-width: 100%;
-    height: 100vh;
+    //max-width: 100%;
+    height: 84vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-
-    .logo-container {
-        width: 50%; 
-    }
+    align-items: center;
+    margin: 2rem;
 }
 
-    nav {
-        background-color: black;
-        height: auto;
-        width: 100%; 
-        display: flex;
-        text-align: center;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        text-transform: uppercase;
-        color: $primary-color;
-        font-size: 16px;
-        line-height: 5;
-        font-family: $primary-font;
-        position: fixed;
-        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
+.pp-banh {
+    margin-top: 2.75rem;
+    width: 100%;
+}
 
-        .button {
-            background-image: linear-gradient($primary-color, $primary-color);
-            background-size: 0 5px, auto;
-            background-repeat: no-repeat;
-            background-position: center bottom;
-            transition: all .2s ease-out;
-
-            &:hover {
-                background-size: 100% 5px, auto;
-            }
-        }
-    }
-
-    .orderNow {
-        background-color: $secondary-color;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        font-size: 16px;
-        text-align: center;
-        padding: 22px 0;
-        font-family: $secondary-font;
-        
-
-        a {
-            text-decoration: none;
-            //color: $primary-color;
-            animation: gradientAnimation 15s ease infinite;
-
-            @keyframes gradientAnimation {
-                0% {
-                    color: $primary-color;
-                }
-                20% {
-                    color:#4ce8c0
-                }
-                40% {
-                    color:#d71d97
-                }
-                60% {
-                    color:#a9ec6c
-                }
-                80% {
-                    color:#439ef0
-                }
-                100% {
-                    color:#f1e36a
-                }
-            }
-        }
-    }
-
-
-.contact-wrapper {
-    height: 60vh;
-    max-width: 100%;
+.about {
     text-align: center;
-    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
 
-    .fa {
-        text-decoration: none;
-        padding: 15x;
-        font-size: 30px;
-        width: 50px;
-        margin: 5px 2px;
+    h2 {
+        margin-bottom: 1.5rem;
     }
 
-    .fa:hover {
-        opacity: 0.7;
-    }
-
-    .fa-instagram, .fa-facebook {
-        color: black;
+    p {
+        padding: 0 10%;
+        font-weight: 300;
     }
 }
+
 
 .food-gallery {
     display: grid;
@@ -147,6 +77,7 @@
 
 .findUs {
     text-align: center;
+    margin-top: 2rem;
 
     .map {
         margin: 5%;
@@ -159,51 +90,55 @@
 }
 
 .menu {
-   display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
+   //display: flex;
+   //flex-direction: column;
+   //flex-wrap: wrap;
    text-align: center;
-   //padding: 10%;
-   padding: 5% 10%;
-   line-height: 1.5;
+   //margin-top: 1rem;
+   //padding: 5% 10%;
 
    h2 {
-      margin: 30px; 
-   }
-   
-   h4 {
-       margin: 0;
+      margin: 1rem; 
    }
 
-   p {
-       margin-top: 0;
+   h3 {
+       margin: 1rem 0;
    }
 
    hr {
-       border: 1px solid $secondary-color;
+       //border: 1px solid $secondary-color;
        height: 1px;
-       background: $secondary-color;
+       //background: $secondary-color;
        margin: 35px 0 20px 0;
    }
 }
 
-.about {
+.contact-wrapper {
+    //height: 60vh;
+    //max-width: 100%;
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    margin: 2rem 0;
 
     h2 {
-        margin-bottom: 0;
+        margin-bottom: 1.5rem;
     }
 
-    p {
-        padding: 10%;
+    .fa {
+        text-decoration: none;
+        padding: 15x;
+        font-size: 30px;
+        width: 50px;
+        margin: 5px 2px;
     }
 
-    img {
-        width: 100%;
-        height: auto;
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-instagram, .fa-facebook {
+        color: black;
     }
 }
 
+@import "../scss/bootstrap.scss";
 
