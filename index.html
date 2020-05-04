@@ -11,8 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
     <nav id="example-1"></nav>
-        <nav class="nav nav-pills nav-fill bg-dark sticky-top">
+        <nav class="navbar bg-dark sticky-top py-3 px-5 justify-content-end">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/singhs-logo.svg" width="100" height="100">
+                </a>
                 <a class="nav-item nav-link text-light" href="#contact">Contact</a>
                 <a class="nav-item nav-link text-light" href="#menu">Menu</a>
                 <a class="nav-item nav-link text-light" href="#about">About</a>
@@ -21,15 +25,58 @@
     </nav>
 
     <section class="home">
-        <div class="container-sm">
-        <img class="logo animated fadeInDown delay-2 img-fluid"  src="assets/images/singhs-logo.svg">
+        <div>
+            <img src="assets/images/landing-bg.jpg" alt="singh's lobby">
         </div>
     </section>
 
     <section data-spy="scroll" data-target="#example-1" data-offset="0"  class="about">
         <h2 id="about">ABOUT US</h2>
         <p class="font-weight-light mx-md-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, voluptas! Totam corrupti ratione autem 
-            facilis obcaecati voluptatem, illum ducimus quia ab quaerat a amet est quae velit ad inventore eligendi.</p>
+            facilis obcaecati voluptatem, illum ducimus quia ab quaerat a amet est quae velit ad inventore eligendi.
+        </p>
+        <div id="button-container">
+        <button id="covidUpdate" role="button" class="btn btn-primary btn-block">Covid 19 Update</button>
+        </div>
+        <div id="protocol">
+            <h1>Singh's Vietnamese Covid-19 Response</h1>
+            <p>We are monitoring closely the impact of the coronavirus (covid-19)
+                outbreak and we are taking steps to ensure the continuity of our service.
+            </p>
+            <p>We have implemented rigorous protocols to protect our community and our employees.
+                The well-being and safety of our team and community is very important to us. We
+                will begin to operate under a new schedule with our same menu as supply
+                allows.
+            </p>
+            <p>In order to help prevent the spread of covid-19 we have implemented the
+                following measures:
+            </p>
+            <div>
+                <ul>
+                    <li>We suspended dine-in. WE will continue to provide
+                        pick-up and delivery only. Customers will still be 
+                        able to order via our square store and in person.
+                    </li>
+                    <li>
+                        We have introduced curb side service for pick up orders.
+                    </li>
+                    <li>
+                        We have implemented a new cleaning and sanitization
+                        protocol of all of our surfaces every 45 minutes during
+                        the course of service.
+                    </li>
+                </ul>
+            </div>
+            <p>We appreciate your understanding and patience as we continue to
+                deal with these unprecedented times.
+            </p>
+            <p>We will keep you updated via our website and social media channels
+                and we will make decisions that ensure the health and safety of our
+                community and our staff.
+            </p>
+            <p>Singh's Vietnamese Team.</p>
+            <h2 id="dismiss">Thank you for bearning with us!</h2>
+        </div>
     </section>
 
     <section class="text-center">
@@ -151,9 +198,11 @@
         <a href="https://www.facebook.com/SinghsVietnameseTrailer/" class="fa fa-facebook"></a>
     </section>
     
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="js/jquery-3.4.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="js/main.js"></script>
 
 </body>
 </html>
