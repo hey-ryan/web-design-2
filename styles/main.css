@@ -1,6 +1,30 @@
-.home img {
-  width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;&display=swap" rel="stylesheet"');
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.singhs-nav {
+  background-color: #91d334;
+}
+
+.home {
+  background-image: url("../assets/images/landing-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
   height: auto;
+}
+
+.home .hero {
+  padding: 26% 10%;
+}
+
+.home .hero .order-curbside {
+  color: #91d334;
+}
+
+.home .hero .order-curbside a {
+  color: #91d334;
 }
 
 .covidStyle {
@@ -10,25 +34,14 @@
   font-weight: bold;
 }
 
-.about {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 1rem 0;
+.menu {
+  background-color: #91d334;
 }
 
-.about h2 {
-  margin-bottom: 1.5rem;
-}
-
-.about p {
-  padding: 0 10%;
-  font-weight: 300;
+.menu hr {
+  height: 1px;
+  margin: 35px 0 20px 0;
+  border-top: 1px solid white;
 }
 
 .food-gallery {
@@ -81,55 +94,13 @@
   margin-top: 2rem;
 }
 
-.findUs .map {
-  margin: 5%;
-}
-
-.findUs .bar {
-  max-width: 100%;
-  height: auto;
-}
-
-.menu {
-  text-align: center;
-}
-
-.menu h2 {
-  margin: 1rem;
-}
-
-.menu h3 {
-  margin: 1rem 0;
-}
-
-.menu hr {
-  height: 1px;
-  margin: 35px 0 20px 0;
-}
-
 .contact-wrapper {
-  text-align: center;
-  margin: 2rem 0;
-}
-
-.contact-wrapper h2 {
-  margin-bottom: 1.5rem;
-}
-
-.contact-wrapper .fa {
-  text-decoration: none;
-  padding: 15x;
-  font-size: 30px;
-  width: 50px;
-  margin: 5px 2px;
-}
-
-.contact-wrapper .fa:hover {
-  opacity: 0.7;
-}
-
-.contact-wrapper .fa-instagram, .contact-wrapper .fa-facebook {
   color: black;
+  height: 80vh;
+}
+
+.email {
+  background-color: #91d334;
 }
 
 /*!
@@ -189,7 +160,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -6659,7 +6630,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6772,7 +6743,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;

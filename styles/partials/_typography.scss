@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet"');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;&display=swap" rel="stylesheet"');
 
 
 $primary-font: "Lora", serif;
@@ -10,27 +10,6 @@ body {
     font-family: $font-family-base;
 }
 
-h1 {
-    @include header-style($font-family-base, black, 56px);
-    text-transform: uppercase;
-}
 
-h2 {
-    @include header-style($primary-font, black, 48px);
-    text-transform: uppercase;
-}
-
-h3 {
-    @include header-style($primary-font, black, 24px);
-}
-
-h4 {
-    @include header-style($secondary-font, black, 18px);
-}
-
-p {
-    @include header-style($secondary-font, black, 18px);
-    font-weight: 300;
-}
 
 
