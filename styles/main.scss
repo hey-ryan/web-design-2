@@ -1,44 +1,53 @@
 //@import './vendor/normalize';
 //@import './partials/mixins';
-//@import './partials/typography';
-//@import './partials/colors';
+@import './partials/typography';
+@import './partials/colors';
 //@import './partials/media-queries';
 
 @import "../scss/functions";
 @import "../scss/variables";
 @import "../scss/mixins";
 
+.singhs-nav {
+    background-color: $primary-color;
+}
 
 .home {
-    //max-width: 100%;
-    height: 84vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
-}
+    background-image: url("../assets/images/landing-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $white;
+    height: auto;
 
-.pp-banh {
-    margin-top: 2.75rem;
-    width: 100%;
-}
+    .hero {
+        padding: 26% 10%;
 
-.about {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 0;
+        .order-curbside {
+            color: $primary-color;
 
-    h2 {
-        margin-bottom: 1.5rem;
-    }
-
-    p {
-        padding: 0 10%;
-        font-weight: 300;
+            a {
+                color: $primary-color;
+            }
+        }
     }
 }
 
+.covidStyle {
+    background-color: yellow;
+    color: black;
+    padding: 10%;
+    font-weight: bold;
+}
+
+.menu {
+    background-color: $primary-color;
+
+    hr {
+        height: 1px;
+        margin: 35px 0 20px 0;
+        border-top: 1px solid white;
+    }
+}
 
 .food-gallery {
     display: grid;
@@ -78,66 +87,16 @@
 .findUs {
     text-align: center;
     margin-top: 2rem;
-
-    .map {
-        margin: 5%;
-    }
-
-    .bar {
-        max-width: 100%;
-        height: auto;
-    }
 }
 
-.menu {
-   //display: flex;
-   //flex-direction: column;
-   //flex-wrap: wrap;
-   text-align: center;
-   //margin-top: 1rem;
-   //padding: 5% 10%;
-
-   h2 {
-      margin: 1rem; 
-   }
-
-   h3 {
-       margin: 1rem 0;
-   }
-
-   hr {
-       //border: 1px solid $secondary-color;
-       height: 1px;
-       //background: $secondary-color;
-       margin: 35px 0 20px 0;
-   }
-}
 
 .contact-wrapper {
-    //height: 60vh;
-    //max-width: 100%;
-    text-align: center;
-    margin: 2rem 0;
+    color: $secondary-color;
+    height: 80vh;
+}
 
-    h2 {
-        margin-bottom: 1.5rem;
-    }
-
-    .fa {
-        text-decoration: none;
-        padding: 15x;
-        font-size: 30px;
-        width: 50px;
-        margin: 5px 2px;
-    }
-
-    .fa:hover {
-        opacity: 0.7;
-    }
-
-    .fa-instagram, .fa-facebook {
-        color: black;
-    }
+.email {
+    background-color: $primary-color;
 }
 
 @import "../scss/bootstrap.scss";
