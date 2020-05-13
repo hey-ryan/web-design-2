@@ -1,5 +1,5 @@
 //@import './vendor/normalize';
-//@import './partials/mixins';
+@import './partials/mixins';
 @import './partials/typography';
 @import './partials/colors';
 //@import './partials/media-queries';
@@ -7,6 +7,8 @@
 @import "../scss/functions";
 @import "../scss/variables";
 @import "../scss/mixins";
+
+
 
 .singhs-nav {
     background-color: $primary-color;
@@ -32,6 +34,10 @@
     }
 }
 
+.about {
+    @include section-padding;
+}
+
 .covidStyle {
     background-color: yellow;
     color: black;
@@ -41,6 +47,7 @@
 
 .menu {
     background-color: $primary-color;
+    @include section-padding;
 
     hr {
         height: 1px;
@@ -85,14 +92,16 @@
 }
 
 .findUs {
+    @include section-padding;
     text-align: center;
     margin-top: 2rem;
 }
 
 
 .contact-wrapper {
+    @include section-padding;
     color: $secondary-color;
-    height: 80vh;
+    height: 100vh;
 }
 
 .email {
